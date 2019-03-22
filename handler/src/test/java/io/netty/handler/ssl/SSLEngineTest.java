@@ -3092,26 +3092,26 @@ public abstract class SSLEngineTest {
                                 @Override
                                 public String[] getClientAliases(String s, Principal[] principals) {
                                     fail();
-                                    return x509ExtendedKeyManager.getClientAliases(s, principals);
+                                    return null;
                                 }
 
                                 @Override
                                 public String chooseClientAlias(
                                         String[] strings, Principal[] principals, Socket socket) {
                                     fail();
-                                    return x509ExtendedKeyManager.chooseClientAlias(strings, principals, socket);
+                                    return null;
                                 }
 
                                 @Override
                                 public String[] getServerAliases(String s, Principal[] principals) {
                                     fail();
-                                    return x509ExtendedKeyManager.getServerAliases(s, principals);
+                                    return null;
                                 }
 
                                 @Override
                                 public String chooseServerAlias(String s, Principal[] principals, Socket socket) {
                                     fail();
-                                    return x509ExtendedKeyManager.chooseServerAlias(s, principals, socket);
+                                    return null;
                                 }
 
                                 @Override
